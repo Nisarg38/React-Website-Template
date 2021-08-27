@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
-
-`
+  background-color: #0b0b0b;
+  overflow: hidden;
+`;
 
 export const FooterWrap = styled.div`
   padding: 48px 24px;
@@ -14,55 +14,62 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-`
+`;
 
 export const FooterLinkContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width:820px){
-      padding-top: 32px;
+  @media screen and (max-width: 820px) {
+    padding-top: 32px;
   }
-`
+`;
 
 export const FooterLinkWrapper = styled.div`
-display: flex;
+  display: flex;
 
-@media screen and (max-width:820px){
+  @media screen and (max-width: 820px) {
     flex-direction: column;
-}
-`
+  }
+`;
 
 export const FooterLinkItem = styled.div`
-display : flex;
-flex-direction: column;
-align-items: center;
-margin:16px;
-text-align: left;
-width: 160px;
-box-sizing: border-box;
-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
 
-@media screen and (max-width:420px){
+  @media screen and (max-width: 420px) {
     margin: 0;
-    padding:10px;
+    padding: 10px;
     width: 100%;
-}
-`
+  }
+`;
 
 export const FooterLinkTitle = styled.h1`
-font-size: 14px;
-margin-bottom: 16px;
-`
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #1a1919;
+`;
 
 export const FooterLink = styled(Link)`
-color:#fff;
-text-decoration: none;
-margin-bottom:0.5rem;
-font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  margin-right: 20px;
+  font-size: 14px;
 
-&:hover{
-    color: #01bf71;
+  &:hover {
+    color: #d72323;
     transition: 0.3s ease-in-out;
-}
-`
+  }
+`;
+
+export const FooterImg = styled.div`
+  display: flex;
+  flex-direction: row;
+`;

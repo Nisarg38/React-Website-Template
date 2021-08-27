@@ -1,33 +1,34 @@
-import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './SidebarElements'
+import React from "react";
+import {
+  SidebarContainer,
+  Icon,
+  CloseIcon,
+  SidebarWrapper,
+  SidebarMenu,
+  SidebarLink,
+} from "./SidebarElements";
 
-const Sidebar = ({isOpen,toggle}) => {
-    return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+const Sidebar = ({ isOpen, toggle }) => {
+  return (
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
+        <CloseIcon />
+      </Icon>
+      <SidebarWrapper>
+        <SidebarMenu>
+          <SidebarLink to="mywork" onClick={toggle}>
+            My Work
+          </SidebarLink>
+          <SidebarLink to="aboutme" onClick={toggle}>
+            About Me
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            Contact Me
+          </SidebarLink>
+        </SidebarMenu>
+      </SidebarWrapper>
+    </SidebarContainer>
+  );
+};
 
-            <Icon onClick={toggle}>
-                <CloseIcon />
-            </Icon>
-            <SidebarWrapper>
-                <SidebarMenu>
-                    <SidebarLink to="Page1" onClick={toggle}>
-                        Page1
-                    </SidebarLink>
-                    <SidebarLink to="Page2" onClick={toggle}>
-                        Page2
-                    </SidebarLink>
-                    <SidebarLink to="Page3" onClick={toggle}>
-                        Page3
-                    </SidebarLink>
-                    <SidebarLink to="Page4" onClick={toggle}>
-                        Page4
-                    </SidebarLink>
-                </SidebarMenu>
-
-
-            </SidebarWrapper>
-        </SidebarContainer>
-    )
-}
-
-export default Sidebar
+export default Sidebar;

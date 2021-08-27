@@ -1,31 +1,35 @@
-import React from 'react'
-import { FooterContainer, FooterWrap, FooterLinkContainer, FooterLinkWrapper, FooterLinkItem, FooterLink, FooterLinkTitle  } from './FooterElements'
+import React from "react";
+import {
+  FooterContainer,
+  FooterWrap,
+  FooterLinkContainer,
+  FooterLinkWrapper,
+  FooterLinkItem,
+  FooterLink,
+  FooterLinkTitle,
+  FooterImg,
+} from "./FooterElements";
 
 const Footer = () => {
-    return (
-        <FooterContainer>
-            <FooterWrap>
-                <FooterLinkContainer>
-                    <FooterLinkWrapper>
-                        <FooterLinkItem>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/">Ex 1</FooterLink>
-                            <FooterLink to="/">Contact</FooterLink>
-                            <FooterLink to="/">Terms of service</FooterLink>
-                            <FooterLink to="/">About Us</FooterLink>
-                        </FooterLinkItem>
-                        <FooterLinkItem>
-                            <FooterLinkTitle>EX 2</FooterLinkTitle>
-                            <FooterLink to="/">Ex 1</FooterLink>
-                            <FooterLink to="/">Contact</FooterLink>
-                            <FooterLink to="/">Terms of service</FooterLink>
-                            <FooterLink to="/">About Us</FooterLink>
-                        </FooterLinkItem>
-                    </FooterLinkWrapper>
-                </FooterLinkContainer>
-            </FooterWrap>
-        </FooterContainer>
-    )
-}
+  return (
+    <FooterContainer>
+      <FooterWrap>
+        <FooterLinkContainer>
+          <FooterLinkWrapper>
+            <FooterLinkItem>
+              <FooterLinkTitle>Let's be internet BFFs</FooterLinkTitle>
+              <FooterImg>
+                <FooterLink to="/">Github</FooterLink>
+                <FooterLink to="/">Twitter</FooterLink>
+                <FooterLink to="/">Instagram</FooterLink>
+                <FooterLink to="/">LinkedIn</FooterLink>
+              </FooterImg>
+            </FooterLinkItem>
+          </FooterLinkWrapper>
+        </FooterLinkContainer>
+      </FooterWrap>
+    </FooterContainer>
+  );
+};
 
-export default Footer
+export default Footer;
