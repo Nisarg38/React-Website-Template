@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 export const FooterContainer = styled.div`
   background-color: #0b0b0b;
   overflow: hidden;
+  border: solid 5px #1a1919;
+  border-radius: 0.5 rem;
 `;
 
 export const FooterWrap = styled.div`
@@ -53,7 +55,7 @@ export const FooterLinkItem = styled.div`
 export const FooterLinkTitle = styled.h1`
   font-size: 32px;
   margin-bottom: 16px;
-  color: #1a1919;
+  color: #fff;
 `;
 
 export const FooterLink = styled(Link)`

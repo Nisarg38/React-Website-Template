@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #1a1919;
+  background: #0b0b0b;
   height: 11vh;
   width: 100vw;
   display: flex;
@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0px 3px #1a1919;
 
   @media screen and (max-width: 960px) {
     transition: 0.4s all ease;
@@ -22,23 +23,21 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justifycontent: "center";
+  justify-content: "center";
   height: 10vh;
   z-index: 1;
   width: 100vw;
   max-width: 100vw;
+  margin-left: 12vw;
 
   @media screen and (min-width: 960px) {
     transition: 0.2s all ease;
-    margin-left: 5.5rem;
-    margin-right: 5.5rem;
   }
 `;
 
 export const NavLogo = styled(LinkR)`
   justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
+  left: 0;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -63,9 +62,12 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 50vw;
+  position: absolute;
+  top: 0;
+  right: 0;
   list-style: none;
   text-align: center;
+  margin-right: 12.2vw;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -83,8 +85,10 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 1vw;
-  &.active {
+  padding: 0 2vw;
+
+  &:hover {
+    transition: all 0.3s ease-in;
     border-bottom: 3px solid #de253e;
   }
 `;
@@ -125,7 +129,11 @@ export const NavBtnLink = styled(LinkR)`
 export const Logo = styled.img`
   height: 6vh;
   width: 6vw;
-  margin-left: 3.5vw;
+
+  @media screen and (max-width: 768px) {
+    height: 11vh;
+    width: 11vw;
+  }
 `;
 
 export const Contact = styled.img`

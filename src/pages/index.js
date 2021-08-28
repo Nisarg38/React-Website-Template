@@ -16,7 +16,6 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Pageone />
-
       <Footer />
     </>
   );

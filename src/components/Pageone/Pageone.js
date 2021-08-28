@@ -42,7 +42,8 @@ const Content = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: auto;
+  margin-left: 14vw;
+  margin-right: 14vw;
   @media screen and (max-width: 760px) {
     flex-direction: column;
     justify-content: center;
@@ -51,16 +52,21 @@ const Content = styled.div`
 
 const Text = styled.div`
   display: flex;
+  width: 50vw;
   flex-direction: column;
-  padding-right: 20%;
+  margin-right: 30%;
 `;
 
 const ContentH1 = styled(motion.h1)`
   display: flex;
   justify-content: flex-start;
-  padding-left: 0 15px;
-  font-size: 250%;
+  padding-left: 0 10px;
+  font-size: 34px;
   margin-left: -5px;
+
+  @media screen and (max-width: 760px) {
+    font-size: 20px;
+  }
 `;
 
 const ContentSvg = styled(motion.img)`
@@ -104,7 +110,7 @@ function Pageone() {
             Hi 👋 ,
           </ContentH1>
           <ContentH1
-            style={{ color: "#D72323" }}
+            style={{ color: "#F5EDED" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
@@ -112,20 +118,19 @@ function Pageone() {
             I am Nisarg.
           </ContentH1>
           <ContentH1
-            style={{ color: "#F5EDED" }}
+            style={{ color: "#D72323" }}
             variants={fadeRight}
             initial="hidden"
             animate="visible"
             transition={{ duration: 4 }}
           >
-            A Fellow Software Developer 👨‍💻.
+            A Software Developer 👨‍💻
           </ContentH1>
         </Text>
         <ContentSvg
           src={Meme}
           initial={{ opacity: 0 }}
           animate={{
-            rotate: 1080,
             opacity: 1,
             transition: { duration: 3 },
           }}
